@@ -62,7 +62,7 @@
     /* ---------------- Embedded Arabic geometric pattern (light) ----------------
      This SVG is embedded and repeated; opacity is low to be a subtle tracery.
      */
-    
+
 
     /* apply pattern gently across big areas */
     .pattern-layer {
@@ -239,11 +239,11 @@
 
     /* ---------------- Catalogue grid ---------------- */
     .catalogue {
-      padding: 36px 6% 80px 6%;
-      display: grid;
-      gap: 26px;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      z-index: 2;
+    padding: 36px 6% 80px 6%;
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 2;
     }
 
     .card {
@@ -457,7 +457,7 @@
 .discript{
   color: #4B2E05;
 }
-    
+
 .media img {
   cursor: zoom-in;
   transition: transform 0.3s ease;
@@ -465,7 +465,7 @@
 .media img:hover {
   transform: scale(1.03);
 }
-  
+
 
 /* ---------- Category Bar Styles ---------- */
 .category-bar {
@@ -560,7 +560,7 @@ body.no-scroll{
       </div>
       <section class="catalogue" id="catalogue"></section>
     </section>
-    
+
 
 
 
@@ -592,7 +592,7 @@ body.no-scroll{
       document.body.classList.remove('no-scroll'); // allow scroll after intro
       // fade splash
       splash.classList.add('hide');
-      
+
 
       // show navbar
       setTimeout(() => {
@@ -721,10 +721,7 @@ body.no-scroll{
       catalogue.innerHTML = `<p style="color:white;text-align:center">⚠️ No images found in images/${folderName}/</p>`;
     }
 
-    catalogue.style.display = 'grid';
-    catalogue.style.gridTemplateColumns = 'repeat(2, 1fr)';
-    catalogue.style.gap = '26px';
-    catalogue.style.zIndex = '10';
+    
   }
 
   // Handle clicks on category options
@@ -859,7 +856,7 @@ body.no-scroll{
 
 
 
-  
+
 
 
 </body>
